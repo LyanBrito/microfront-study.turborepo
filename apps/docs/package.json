@@ -11,11 +11,13 @@
     "check-types": "next typegen && tsc --noEmit"
   },
   "dependencies": {
+    "web": "*",
     "@module-federation/nextjs-mf": "^8.8.46",
     "@repo/ui": "workspace:*",
     "next": "^16.0.0",
     "react": "^19.2.0",
-    "react-dom": "^19.2.0"
+    "react-dom": "^19.2.0",
+    "web": "^0.0.2"
   },
   "devDependencies": {
     "@repo/eslint-config": "workspace:*",
@@ -23,6 +25,7 @@
     "@types/node": "^22.15.3",
     "@types/react": "19.2.2",
     "@types/react-dom": "19.2.2",
+    "@types/web": "^0.0.294",
     "eslint": "^9.39.1",
     "typescript": "5.9.2"
   }

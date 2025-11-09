@@ -9,6 +9,7 @@
     "check-types": "turbo run check-types"
   },
   "devDependencies": {
+    "@module-federation/nextjs-mf": "^8.8.46",
     "prettier": "^3.6.2",
     "turbo": "^2.6.0",
     "typescript": "5.9.2"
@@ -17,7 +18,11 @@
   "engines": {
     "node": ">=18"
   },
-  "dependencies": {
-    "@module-federation/nextjs-mf": "^8.8.46"
+  "compilerOptions": {
+    "paths": {
+      "web": [
+        "apps/web/component/index.ts"
+      ]
+    }
   }
 }
